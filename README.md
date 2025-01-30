@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Marcus Costa - Desenvolvedor Front-End
 
-## Getting Started
+👋 Olá! Eu sou o **Marcus Costa**, um Desenvolvedor Front-End apaixonado por criar interfaces modernas, responsivas e acessíveis. Minha missão é transformar designs em experiências digitais funcionais e agradáveis para os usuários.
 
-First, run the development server:
+## 🛠️ Tecnologias e Ferramentas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Linguagens:** JavaScript (ES6+), Typescript, Python
+- **Frameworks e Bibliotecas:** React, Next, Tailwind CSS, Styled Components, Redux,  React Router, MongoDB, Node.js, Prisma
+- **Ferramentas de Estilo:** Sass, Tailwind CSS, Styled Components
+- **Versionamento:** Git, GitHub
+- **Outras:** Figma (para colaboração com designers)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📚 Aprendizado Contínuo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Atualmente, estou focado em:
+- Next.js
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📫 Como me encontrar
 
-## Learn More
+- **LinkedIn:** https://www.linkedin.com/in/marcus-bittencourt/
+- **E-mail:** marcus.vinicius.bittencourt.c@gmail.com
+- **GitHub:** https://github.com/marcusdv
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⭐ Sinta-se à vontade para explorar meus repositórios e entrar em contato se quiser colaborar ou trocar ideias!
