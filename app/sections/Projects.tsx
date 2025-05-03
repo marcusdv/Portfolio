@@ -1,4 +1,4 @@
-import ProjectsCards from '../components/ProjectsCards';
+import ProjectCard from '../components/ProjectCard';
 
 const projects = [
     {
@@ -24,7 +24,8 @@ const projects = [
     },
     {
         name: 'Animateless',
-        description: 'Diferentes animações de uma biblioteca botões interativos.',
+        description:
+            'Diferentes animações de uma biblioteca botões interativos.',
         url: 'https://animated-things.vercel.app/animateless',
         imgUrl: '/images/projects/animateless.png',
     },
@@ -33,12 +34,17 @@ const projects = [
 function Projects() {
     return (
         <>
-            <h1 className="text-3xl text-left font-bold mb-2">Projetos</h1>
-            <ul className="flex flex-col gap-4 items-start bg-white text-center md:text-left overflow-hidden rounded-xl p-2 md:p-5 shadow-md ">
-                {projects.map((obj, i) => {
+            <h1 className="text-4xl text-left font-bold mb-2 ">Projetos</h1>
+            <ul className="bg-white text-left rounded-xl p-4">
+                {projects.map((project, i) => {
                     return (
-                        <li key={i} className="mb-2">
-                            <ProjectsCards project={obj} />
+                        <li key={i} >
+                            <ProjectCard
+                                name={project.name}
+                                description={project.description}
+                                url={project.url}
+                                imgUrl={project.imgUrl}
+                            />
                         </li>
                     );
                 })}

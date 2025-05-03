@@ -5,7 +5,7 @@
 ## 🛠️ Tecnologias e Ferramentas
 
 - **Linguagens:** JavaScript (ES6+), Typescript, Python
-- **Frameworks e Bibliotecas:** React, Next, Tailwind CSS, Styled Components, Redux,  React Router, MongoDB, Node.js, Prisma
+- **Frameworks e Bibliotecas:** React, Next, Tailwind CSS, Styled Components, Redux, React Router, MongoDB, Node.js, Prisma
 - **Ferramentas de Estilo:** Sass, Tailwind CSS, Styled Components
 - **Versionamento:** Git, GitHub
 - **Outras:** Figma (para colaboração com designers)
@@ -13,6 +13,7 @@
 ## 📚 Aprendizado Contínuo
 
 Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Atualmente, estou focado em:
+
 - Next.js
 
 ## 📫 Como me encontrar
