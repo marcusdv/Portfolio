@@ -43,12 +43,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await emailjs.send(
-        serviceId,
-        templateId,
-        formDetails,
-        publicKey
-      );
+      await emailjs.send(serviceId, templateId, formDetails, publicKey);
 
       setFormDetails(initialState);
 
