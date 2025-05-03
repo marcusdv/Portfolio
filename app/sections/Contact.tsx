@@ -8,13 +8,12 @@ const Contact = () => {
     email: "",
     message: "",
   };
+  const [formDetails, setFormDetails] = useState(initialState);
 
   const statusInitialState = {
     success: false,
     message: "",
   };
-
-  const [formDetails, setFormDetails] = useState(initialState);
   const [status, setStatus] = useState(statusInitialState); // Para controlar o status do envio
 
   // Atualiza o estado do formulário
@@ -43,17 +42,18 @@ const Contact = () => {
     }
 
     try {
-      await emailjs.send(serviceId, templateId, formDetails, publicKey);
+      await emailjs.send(serviceId, templateId, formDetails, 'publicKey');
 
       setFormDetails(initialState);
-
       setStatus({ success: true, message: "Mensagem enviada com sucesso!" });
-    } catch (error: any) {
-      console.error("FAILED...", error);
-
+    } catch (error: unknown) {
+      let errorMessage = "Houve um erro ao enviar a mensagem.";
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      }
       setStatus({
         success: false,
-        message: "Houve um erro ao enviar a mensagem.",
+        message: errorMessage,
       });
     }
   };
