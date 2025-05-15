@@ -2,6 +2,20 @@ import ProjectCard from '../components/ProjectCard';
 
 const projects = [
     {
+        name: 'Modique',
+        description:
+            'Loja de roupas e acessórios de moda. EM DESENVOLVIMENTO',
+        url: 'https://loja-de-roupa-delta.vercel.app/',
+        imgUrl: '/images/projects/defaultimage.jpg',
+    },
+    {
+        name: 'Parti Berat',
+        description:
+            'Aplicação web feita em uma entrevista.',
+        url: 'https://pasti-berat-dpbv.vercel.app/',
+        imgUrl: '/images/projects/defaultimage.jpg',
+    },
+    {
         name: 'Organo Adventure Time',
         description:
             'Organo é uma aplicação web simples e intuitiva para organizar pessoas em diferentes times, ideal para quem precisa gerenciar equipes e visualizar sua composição em tempo real.',
@@ -29,6 +43,7 @@ const projects = [
         url: 'https://animated-things.vercel.app/animateless',
         imgUrl: '/images/projects/animateless.png',
     },
+    
 ];
 
 function Projects() {
