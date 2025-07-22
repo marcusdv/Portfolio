@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-    --primary: 221.2 83.2% 53.3%;
+    --primary: 212 100% 50%;
     --primary-foreground: 210 40% 98%;
     --secondary: 210 40% 96.1%;
-    --secondary-foreground: 0, 0%, 51%;
-    --background: 0, 0%, 97%;
-    --foreground: 222.2 84% 4.9%;
+    --secondary-foreground: 215 20% 65%;
+    --background: 0, 0%, 98%;
+    --foreground: 210 24% 16%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --ring: 212 100% 50%;
     --radius: 0.75rem;
 }
 
