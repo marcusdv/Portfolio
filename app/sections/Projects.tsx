@@ -16,6 +16,13 @@ const projects = [
         imgUrl: '/images/projects/salpatos.jpg',
     },
     {
+        name: 'Animateless',
+        description:
+            'Coleção de diferentes animações e botões interativos criados para demonstrar técnicas de animação em CSS.',
+        url: 'https://animated-things.vercel.app/animateless',
+        imgUrl: '/images/projects/animateless.png',
+    },
+    {
         name: 'Pasti Berat',
         description:
             'Site desenvolvido para uma entrevista, focado apenas na interface visual, sem funcionalidades dinâmicas.',
@@ -43,13 +50,7 @@ const projects = [
         url: 'https://newsletter-virid-three.vercel.app/',
         imgUrl: '/images/projects/mergulhador.png',
     },
-    {
-        name: 'Animateless',
-        description:
-            'Coleção de diferentes animações e botões interativos criados para demonstrar técnicas de animação em CSS.',
-        url: 'https://animated-things.vercel.app/animateless',
-        imgUrl: '/images/projects/animateless.png',
-    },
+
 ];
 
 function Projects() {
