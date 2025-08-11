@@ -17,7 +17,7 @@ function ProjectsCards({ name, description, url, imgUrl }: ProjectsCardsProps) {
       rel="noopener noreferrer"
       aria-label={`Ver projeto ${name}`}
     >
-      <div className="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-9 gap-x-4">
+      <div className="grid grid-cols-2 gap-4 md:gap-0  md:grid-cols-5 xl:grid-cols-9 ">
 
         {/* imagem */}
         <Image

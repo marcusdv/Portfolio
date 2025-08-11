@@ -27,7 +27,7 @@ const projects = [
         description:
             'Site desenvolvido para uma entrevista, focado apenas na interface visual, sem funcionalidades dinâmicas.',
         url: 'https://pasti-berat-dpbv.vercel.app/',
-        imgUrl: '/images/projects/defaultimage.jpg',
+        imgUrl: '/images/projects/pasti.png',
     },
     {
         name: 'Organo Adventure Time',
