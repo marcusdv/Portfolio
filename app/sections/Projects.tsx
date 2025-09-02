@@ -4,7 +4,7 @@ const projects = [
     {
         name: 'É Pra Hoje!',
         description:
-            'Aplicação de lista de tarefas diárias com limite de horário de término e criação de tarefas. Tambem possui prioridade de tarefa e days streaks.',
+            'Aplicação de lista de tarefas diárias com limite de horário de término e criação de tarefas. Também possui prioridade de tarefa e days streaks.',
         url: 'https://to-do-day-pi.vercel.app/',
         imgUrl: '/images/projects/eprahojelogo.png',
     },
