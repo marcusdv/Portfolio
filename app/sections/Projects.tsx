@@ -2,6 +2,13 @@ import ProjectCard from '../components/ProjectCard';
 
 const projects = [
     {
+        name: 'É Pra Hoje!',
+        description:
+            'Aplicação de lista de tarefas diárias com limite de horário de término e criação de tarefas. Tambem possui prioridade de tarefa e days streaks.',
+        url: 'https://to-do-day-pi.vercel.app/',
+        imgUrl: '/images/projects/eprahojelogo.png',
+    },
+    {
         name: 'CEEFGuru',
         description:
             'Aplicação web especializada em previsão do tempo para o dia do vôlei dos estudantes de Farmácia da UFBA. Para ajudar os alunos a se organizarem para seus jogos de sexta-feira. As APIs de previsão utilizadas foram OpenWeather, MeteoBlue e AccuWeather. Desenvolvida com Next.js, TypeScript e Tailwind CSS.',
@@ -13,7 +20,7 @@ const projects = [
         description:
             'Loja de sapatos fictícia, simulando checkout, produtos, login, etc. Desenvolvida com Next.js, Supabase, TypeScript, Shadcn e Tailwind CSS.',
         url: 'https://loja-de-roupa-delta.vercel.app/',
-        imgUrl: '/images/projects/salpatos.jpg',
+        imgUrl: '/images/projects/salpato.png',
     },
     {
         name: 'Animateless',
