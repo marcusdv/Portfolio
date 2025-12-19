@@ -2,13 +2,6 @@ import ProjectCard from '../components/ProjectCard';
 
 const projects = [
     {
-        name: 'É Pra Hoje!',
-        description:
-            'Aplicação de lista de tarefas diárias com limite de horário de término e criação de tarefas. Também possui prioridade de tarefa e days streaks.',
-        url: 'https://to-do-day-pi.vercel.app/',
-        imgUrl: '/images/projects/eprahojelogo.png',
-    },
-    {
         name: 'CEEFGuru',
         description:
             'Aplicação web especializada em previsão do tempo para o dia do vôlei dos estudantes de Farmácia da UFBA. Para ajudar os alunos a se organizarem para seus jogos de sexta-feira. As APIs de previsão utilizadas foram OpenWeather, MeteoBlue e AccuWeather. Desenvolvida com Next.js, TypeScript e Tailwind CSS.',
@@ -16,11 +9,25 @@ const projects = [
         imgUrl: '/images/projects/magistral.jpeg',
     },
     {
+        name: 'É Pra Hoje!',
+        description:
+            'Aplicação de lista de tarefas diárias com limite de horário de término e criação de tarefas. Também possui prioridade de tarefa e days streaks.',
+        url: 'https://to-do-day-pi.vercel.app/',
+        imgUrl: '/images/projects/eprahojelogo.png',
+    },
+    {
         name: 'Salpatos',
         description:
             'Loja de sapatos fictícia, simulando checkout, produtos, login, etc. Desenvolvida com Next.js, Supabase, TypeScript, Shadcn e Tailwind CSS.',
         url: 'https://loja-de-roupa-delta.vercel.app/',
         imgUrl: '/images/projects/salpato.png',
+    },
+    {
+        name: 'Jogo da Velha',
+        description:
+            'Jogo da velha clássico desenvolvido com interface interativa, permitindo partidas entre dois jogadores com detecção automática de vitória e empate.',
+        url: 'https://jogo-da-velha-b1rpcivkm-marcusdvs-projects.vercel.app/',
+        imgUrl: '/images/projects/jogo-da-velha.png',
     },
     {
         name: 'Animateless',
@@ -49,13 +56,6 @@ const projects = [
             'Projeto que reúne depoimentos fictícios de personagens sobre uma palestra científica apresentada pela Princesa Jujuba, com diferentes perspectivas de cada personagem.',
         url: 'https://palestra-de-ciencias-grid-4hkgft02g-marcusdvs-projects.vercel.app/',
         imgUrl: '/images/projects/testemunhos.png',
-    },
-    {
-        name: 'Newsletter Mergulhador',
-        description:
-            'Interface de newsletter desenvolvida para testar animações e manipulação responsiva de elementos em diferentes tamanhos de tela.',
-        url: 'https://newsletter-virid-three.vercel.app/',
-        imgUrl: '/images/projects/mergulhador.png',
     },
 
 ];
