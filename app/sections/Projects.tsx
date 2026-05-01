@@ -1,63 +1,62 @@
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from "../components/ProjectCard";
 
 const projects = [
     {
-        name: 'CEEFGuru',
+        name: "CEEFGuru",
         description:
-            'Aplicação web especializada em previsão do tempo para o dia do vôlei dos estudantes de Farmácia da UFBA. Para ajudar os alunos a se organizarem para seus jogos de sexta-feira. As APIs de previsão utilizadas foram OpenWeather, MeteoBlue e AccuWeather. Desenvolvida com Next.js, TypeScript e Tailwind CSS.',
-        url: 'https://previsao-do-ceef.vercel.app/',
-        imgUrl: '/images/projects/magistral.jpeg',
+            "Aplicação web especializada em previsão do tempo para o dia do vôlei dos estudantes de Farmácia da UFBA. Para ajudar os alunos a se organizarem para seus jogos de sexta-feira. As APIs de previsão utilizadas foram OpenWeather, MeteoBlue e AccuWeather. Desenvolvida com Next.js, TypeScript e Tailwind CSS.",
+        url: "https://previsao-do-ceef.vercel.app/",
+        imgUrl: "/images/projects/magistral.jpeg",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "REST API"],
     },
     {
-        name: 'É Pra Hoje!',
+        name: "É Pra Hoje!",
         description:
-            'Aplicação de lista de tarefas diárias com limite de horário de término e criação de tarefas. Também possui prioridade de tarefa e days streaks.',
-        url: 'https://to-do-day-pi.vercel.app/',
-        imgUrl: '/images/projects/eprahojelogo.png',
+            "Aplicação de lista de tarefas diárias com limite de horário de término e criação de tarefas. Também possui prioridade de tarefa e days streaks.",
+        url: "https://to-do-day-pi.vercel.app/",
+        imgUrl: "/images/projects/eprahojelogo.png",
+        stack: ["React", "JavaScript", "CSS"],
     },
     {
-        name: 'Salpatos',
+        name: "Salpatos",
         description:
-            'Loja de sapatos fictícia, simulando checkout, produtos, login, etc. Desenvolvida com Next.js, Supabase, TypeScript, Shadcn e Tailwind CSS.',
-        url: 'https://loja-de-roupa-delta.vercel.app/',
-        imgUrl: '/images/projects/salpato.png',
+            "Loja de sapatos fictícia, simulando checkout, produtos, login, etc. Desenvolvida com Next.js, Supabase, TypeScript, Shadcn e Tailwind CSS.",
+        url: "https://loja-de-roupa-delta.vercel.app/",
+        imgUrl: "/images/projects/salpato.png",
+        stack: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS"],
     },
     {
-        name: 'Jogo da Velha',
+        name: "Jogo da Velha",
         description:
-            'Jogo da velha clássico desenvolvido com interface interativa, permitindo partidas entre dois jogadores com detecção automática de vitória e empate.',
-        url: 'https://jogo-da-velha-b1rpcivkm-marcusdvs-projects.vercel.app/',
-        imgUrl: '/images/projects/jogo-da-velha.png',
+            "Jogo da velha clássico desenvolvido com interface interativa, permitindo partidas entre dois jogadores com detecção automática de vitória e empate.",
+        url: "https://jogo-da-velha-b1rpcivkm-marcusdvs-projects.vercel.app/",
+        imgUrl: "/images/projects/jogo-da-velha.png",
+        stack: ["React", "JavaScript", "CSS"],
     },
     {
-        name: 'Animateless',
+        name: "Animateless",
         description:
-            'Coleção de diferentes animações e botões interativos criados para demonstrar técnicas de animação em CSS.',
-        url: 'https://animated-things.vercel.app/',
-        imgUrl: '/images/projects/animateless.png',
+            "Coleção de diferentes animações e botões interativos criados para demonstrar técnicas de animação em CSS.",
+        url: "https://animated-things.vercel.app/",
+        imgUrl: "/images/projects/animateless.png",
+        stack: ["HTML", "CSS", "JavaScript"],
     },
     {
-        name: 'Pasti Berat',
+        name: "Pasti Berat",
         description:
-            'Site desenvolvido para uma entrevista, focado apenas na interface visual, sem funcionalidades dinâmicas.',
-        url: 'https://pasti-berat-dpbv.vercel.app/',
-        imgUrl: '/images/projects/pasti.png',
+            "Site desenvolvido para uma entrevista, focado apenas na interface visual, sem funcionalidades dinâmicas.",
+        url: "https://pasti-berat-dpbv.vercel.app/",
+        imgUrl: "/images/projects/pasti.png",
+        stack: ["HTML", "CSS"],
     },
     {
-        name: 'Organo Adventure Time',
+        name: "Organo Adventure Time",
         description:
-            'Aplicação web simples e intuitiva para organizar pessoas em diferentes times. Ideal para gerenciar equipes e visualizar sua composição em tempo real.',
-        url: 'https://organo-adventure-time.vercel.app/',
-        imgUrl: '/images/projects/organo.png',
+            "Aplicação web simples e intuitiva para organizar pessoas em diferentes times. Ideal para gerenciar equipes e visualizar sua composição em tempo real.",
+        url: "https://organo-adventure-time.vercel.app/",
+        imgUrl: "/images/projects/organo.png",
+        stack: ["React", "JavaScript", "CSS"],
     },
-    {
-        name: 'Testemunhos da Palestra Científica de Hora de Aventura',
-        description:
-            'Projeto que reúne depoimentos fictícios de personagens sobre uma palestra científica apresentada pela Princesa Jujuba, com diferentes perspectivas de cada personagem.',
-        url: 'https://palestra-de-ciencias-grid-4hkgft02g-marcusdvs-projects.vercel.app/',
-        imgUrl: '/images/projects/testemunhos.png',
-    },
-
 ];
 
 function Projects() {
@@ -67,12 +66,13 @@ function Projects() {
             <ul className="bg-white text-left rounded-xl p-4 border border-slate-100 shadow-sm">
                 {projects.map((project, i) => {
                     return (
-                        <li key={i} >
+                        <li key={i}>
                             <ProjectCard
                                 name={project.name}
                                 description={project.description}
                                 url={project.url}
                                 imgUrl={project.imgUrl}
+                                stack={project.stack}
                             />
                         </li>
                     );
