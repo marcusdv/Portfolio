@@ -2,7 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
     {
-        name: "Wiki Game",
+        name: "⭐ Wiki Game ⭐",
         description:
             "Jogo baseado no desafio da Wikipedia: comece em um artigo aleatório e navegue apenas por links internos até chegar ao artigo destino no menor número de cliques possível. Ness.css foi utilizado para a interface, Next.js e TypeScript para a estrutura do projeto, Tailwind CSS para o estilo e Supabase para o banco de dados. A API REST personalizada foi criada para fornecer os dados dos artigos e links da Wikipedia.",
 
