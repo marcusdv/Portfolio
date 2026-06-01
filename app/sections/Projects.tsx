@@ -2,6 +2,15 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
     {
+        name: "Wiki Game",
+        description:
+            "Jogo baseado no desafio da Wikipedia: comece em um artigo aleatório e navegue apenas por links internos até chegar ao artigo destino no menor número de cliques possível. Ness.css foi utilizado para a interface, Next.js e TypeScript para a estrutura do projeto, Tailwind CSS para o estilo e Supabase para o banco de dados. A API REST personalizada foi criada para fornecer os dados dos artigos e links da Wikipedia.",
+
+        url: "https://wikigame-five.vercel.app/",
+        imgUrl: "/images/projects/defaultimage.jpg",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "REST API"],
+    },
+    {
         name: "CEEFGuru",
         description:
             "Aplicação web especializada em previsão do tempo para o dia do vôlei dos estudantes de Farmácia da UFBA. Para ajudar os alunos a se organizarem para seus jogos de sexta-feira. As APIs de previsão utilizadas foram OpenWeather, MeteoBlue e AccuWeather. Desenvolvida com Next.js, TypeScript e Tailwind CSS.",
@@ -48,14 +57,6 @@ const projects = [
         url: "https://pasti-berat-dpbv.vercel.app/",
         imgUrl: "/images/projects/pasti.png",
         stack: ["HTML", "CSS"],
-    },
-    {
-        name: "Organo Adventure Time",
-        description:
-            "Aplicação web simples e intuitiva para organizar pessoas em diferentes times. Ideal para gerenciar equipes e visualizar sua composição em tempo real.",
-        url: "https://organo-adventure-time.vercel.app/",
-        imgUrl: "/images/projects/organo.png",
-        stack: ["React", "JavaScript", "CSS"],
     },
 ];
 

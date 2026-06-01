@@ -1,14 +1,18 @@
 const skills = [
     "Next.js",
+    "React",
     "Typescript",
     "Javascript",
-    "Git & GitHub",
-    "PostgreSQL",
-    "AWS",
-    "Docker",
+    "Python",
+    "PHP",
     "HTML & CSS",
-    "Vercel",
+    "Tailwind CSS",
+    "Shadcn/UI",
+    "PostgreSQL",
     "Supabase",
+    "REST API",
+    "Git & GitHub",
+    "Vercel",
 ];
 
 function Skills() {

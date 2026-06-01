@@ -15,8 +15,8 @@ export default function Home() {
                     <Skills />
                 </div>
                 <div className="flex flex-col gap-4 md:col-span-3">
-                    <Resume />
                     <Projects />
+                    <Resume />
                     {/* <Challenge30d30s /> */}
                     <Contact />
                 </div>
