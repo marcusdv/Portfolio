@@ -50,14 +50,6 @@ const projects = [
         imgUrl: "/images/projects/animateless.png",
         stack: ["HTML", "CSS", "JavaScript"],
     },
-    {
-        name: "Pasti Berat",
-        description:
-            "Site desenvolvido para uma entrevista, focado apenas na interface visual, sem funcionalidades dinâmicas.",
-        url: "https://pasti-berat-dpbv.vercel.app/",
-        imgUrl: "/images/projects/pasti.png",
-        stack: ["HTML", "CSS"],
-    },
 ];
 
 function Projects() {
