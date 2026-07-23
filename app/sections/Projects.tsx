@@ -8,7 +8,7 @@ const projects = [
 
         url: "https://wikigame-five.vercel.app/",
         imgUrl: "/images/projects/wikirun.jpeg",
-        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "REST API"],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "REST API", "Zod", "Ness.css", "JWT"],
     },
     {
         name: "CEEFGuru",
