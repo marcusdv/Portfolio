@@ -13,7 +13,7 @@ function Bio() {
                 height={100}
             />
             <h1 className=" text-lg md:text-2xl font-bold mt-3 text-slate-800">Marcus Costa</h1>
-            <p className="text-slate-600 py-2">Desenvolvedor</p>
+            <p className="text-slate-600 py-2">Desenvolvedor Fullstack</p>
 
             {/* Meus Links */}
             <div className="flex flex-row gap-2 mt-2 justify-center md:justify-start">
