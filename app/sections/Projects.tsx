@@ -34,22 +34,6 @@ const projects = [
         imgUrl: "/images/projects/salpato.png",
         stack: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS"],
     },
-    {
-        name: "Jogo da Velha",
-        description:
-            "Jogo da velha clássico desenvolvido com interface interativa, permitindo partidas entre dois jogadores com detecção automática de vitória e empate.",
-        url: "https://jogo-da-velha-b1rpcivkm-marcusdvs-projects.vercel.app/",
-        imgUrl: "/images/projects/jogo-da-velha.png",
-        stack: ["React", "JavaScript", "CSS"],
-    },
-    {
-        name: "Animateless",
-        description:
-            "Coleção de diferentes animações e botões interativos criados para demonstrar técnicas de animação em CSS.",
-        url: "https://animated-things.vercel.app/",
-        imgUrl: "/images/projects/animateless.png",
-        stack: ["HTML", "CSS", "JavaScript"],
-    },
 ];
 
 function Projects() {
