@@ -2,7 +2,15 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
     {
-        name: "⭐ Wiki Game ⭐",
+        name: "Meu blog!",
+        description: "Em desenvolvimento no momento. Mas já da pra dar uma olhadinha.",
+
+        url: "https://blog-blop.vercel.app/",
+        imgUrl: "/images/projects/defaultimage.jpg",
+        stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    },
+    {
+        name: "Wiki Game",
         description:
             "Jogo baseado no desafio da Wikipedia: comece em um artigo aleatório e navegue apenas por links internos até chegar ao artigo destino no menor número de cliques possível. Ness.css foi utilizado para a interface, Next.js e TypeScript para a estrutura do projeto, Tailwind CSS para o estilo e Supabase para o banco de dados. A API REST personalizada foi criada para fornecer os dados dos artigos e links da Wikipedia.",
 
