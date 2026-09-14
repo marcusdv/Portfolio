@@ -1,94 +1,112 @@
-import { IconFileCv, IconDownload, IconBriefcase, IconSchool } from "@tabler/icons-react";
+import { IconArrowUpRight, IconDownload } from "@tabler/icons-react";
+import Section from "../components/Section";
+
+const RESUME_PDF = "/pdfs/Marcus_Costa_Desenvolvedor_Fullstack.pdf";
+
+const experience = [
+    {
+        role: "Desenvolvedor Frontend",
+        org: "Instituto Themis Furigo",
+        meta: "São Paulo, SP (Remoto)",
+        period: "Mar 2025 até hoje",
+        bullets: [
+            "Desenvolvimento e manutenção de páginas web com PHP, JavaScript, HTML e CSS.",
+            "Criação de páginas institucionais na plataforma Locaweb.",
+            "Participação na reestruturação do site, melhorando organização e usabilidade.",
+            "Correção de bugs e integração com APIs para consumo de dados no frontend.",
+        ],
+    },
+    {
+        role: "Automação de extração de dados de PDFs",
+        org: "Freelance para profissionais da área da saúde",
+        meta: "Salvador, BA",
+        period: "2023 a 2025",
+        bullets: [
+            "Aplicação em Python para extração de dados estruturados a partir de PDFs.",
+            "Automação da geração de planilhas Excel a partir dos dados extraídos.",
+            "Redução de esforço manual e aumento da precisão dos dados.",
+        ],
+    },
+];
+
+const education = [
+    {
+        role: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+        org: "FIB Estácio",
+        meta: "Salvador, BA",
+        period: "Concluído em 2018",
+        bullets: [
+            "Disciplinas relevantes: Banco de Dados, Estrutura de Dados, Engenharia de Software, Sistemas Operacionais e Algoritmos.",
+        ],
+    },
+];
+
+type Entry = (typeof experience)[number];
+
+function Timeline({ entries }: { entries: Entry[] }) {
+    return (
+        <ol className="flex flex-col gap-10">
+            {entries.map((entry) => (
+                <li key={entry.role} className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-1">
+                        <span className="font-mono text-xs text-muted">{entry.period}</span>
+                        <h4 className="text-base font-medium">{entry.role}</h4>
+                        <p className="text-sm text-muted">
+                            {entry.org} · {entry.meta}
+                        </p>
+                    </div>
+                    <ul className="flex flex-col gap-1.5 border-l border-border pl-4">
+                        {entry.bullets.map((bullet) => (
+                            <li key={bullet} className="text-sm leading-relaxed text-muted">
+                                {bullet}
+                            </li>
+                        ))}
+                    </ul>
+                </li>
+            ))}
+        </ol>
+    );
+}
 
 function Resume() {
     return (
-        <section className="bg-white rounded-xl p-5 md:p-8 border border-slate-100 shadow-sm mb-4">
-            <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-100 pb-5 mb-6 gap-4">
-                <div>
-                    <h2 className="text-3xl font-bold text-slate-800 flex items-center gap-2">
-                        <IconFileCv className="text-blue-600" size={32} /> Currículo
-                    </h2>
-                    <p className="text-slate-600 mt-1">Conheça minha trajetória profissional e acadêmica.</p>
-                </div>
-                <a
-                    href="https://docs.google.com/document/d/1WEU98cjHOVYvAqbBb4LgGPbS4OenVm392gtyQQdcFHs/edit?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-medium transition-transform hover:-translate-y-0.5 active:translate-y-0"
-                >
-                    <IconDownload size={20} />
-                    Baixar PDF
-                </a>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {/* Experiência */}
-                <div>
-                    <h3 className="text-xl font-semibold text-slate-800 flex items-center gap-2 mb-5">
-                        <IconBriefcase className="text-blue-600" size={24} /> Experiência
-                    </h3>
-                    <div className="relative border-l-2 border-slate-200 ml-3 pl-6 flex flex-col gap-6">
-                        {/* Item 1 */}
-                        <div className="relative">
-                            <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-blue-600 border-2 border-white shadow-sm hover:scale-125 transition-transform"></span>
-                            <h4 className="font-bold text-slate-800 text-lg">Desenvolvedor Frontend</h4>
-                            <p className="text-sm font-semibold text-blue-600 mb-2">
-                                Instituto Themis Furigo • São Paulo, SP (Remoto) • Mar 2025 – Atual
-                            </p>
-                            <ul className="text-sm text-slate-600 leading-relaxed list-disc list-inside space-y-1">
-                                <li>Desenvolvimento e manutenção de páginas web com PHP, JavaScript, HTML e CSS.</li>
-                                <li>Criação de páginas institucionais na plataforma Locaweb.</li>
-                                <li>Participação na reestruturação do site, melhorando organização e usabilidade.</li>
-                                <li>Implementação de melhorias na interface e experiência do usuário.</li>
-                                <li>Correção de bugs e manutenção de funcionalidades.</li>
-                                <li>Integração com APIs para consumo de dados no frontend.</li>
-                            </ul>
-                        </div>
-                        {/* Item 2 */}
-                        <div className="relative">
-                            <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-slate-300 border-2 border-white shadow-sm hover:scale-125 transition-transform"></span>
-                            <h4 className="font-bold text-slate-800 text-lg">
-                                Automação de Extração de Dados de PDFs (Python)
-                            </h4>
-                            <p className="text-sm font-medium text-slate-500 mb-2">
-                                Freelance (Profissionais da área da saúde) • Salvador, BA • 2023 – 2025
-                            </p>
-                            <ul className="text-sm text-slate-600 leading-relaxed list-disc list-inside space-y-1">
-                                <li>
-                                    Desenvolvimento de aplicação para extração de dados estruturados a partir de PDFs.
-                                </li>
-                                <li>Automação da geração de planilhas Excel a partir dos dados extraídos.</li>
-                                <li>Manipulação e tratamento de dados utilizando Python.</li>
-                                <li>Redução de esforço manual e aumento da precisão dos dados.</li>
-                            </ul>
-                        </div>
-                    </div>
+        <Section id="curriculo" index="03 / Trajetória" title="Currículo">
+            <div className="flex flex-col gap-14">
+                <div className="grid grid-cols-1 gap-12 md:grid-cols-[8rem_1fr] md:gap-8">
+                    <h3 className="label md:pt-1">Experiência</h3>
+                    <Timeline entries={experience} />
                 </div>
 
-                {/* Educação */}
-                <div>
-                    <h3 className="text-xl font-semibold text-slate-800 flex items-center gap-2 mb-5">
-                        <IconSchool className="text-blue-600" size={24} /> Educação
-                    </h3>
-                    <div className="relative border-l-2 border-slate-200 ml-3 pl-6 flex flex-col gap-6">
-                        {/* Item 1 */}
-                        <div className="relative">
-                            <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-blue-600 border-2 border-white shadow-sm hover:scale-125 transition-transform"></span>
-                            <h4 className="font-bold text-slate-800 text-lg">
-                                Tecnólogo em Análise e Desenvolvimento de Sistemas
-                            </h4>
-                            <p className="text-sm font-semibold text-blue-600 mb-2">
-                                FIB Estácio • Salvador, BA • Concluído em 2018
-                            </p>
-                            <p className="text-sm text-slate-600 leading-relaxed">
-                                <span className="font-medium text-slate-700">Disciplinas relevantes:</span> Banco de
-                                Dados, Estrutura de Dados, Engenharia de Software, Sistemas Operacionais e Algoritmos.
-                            </p>
-                        </div>
-                    </div>
+                <div className="grid grid-cols-1 gap-12 md:grid-cols-[8rem_1fr] md:gap-8">
+                    <h3 className="label md:pt-1">Educação</h3>
+                    <Timeline entries={education} />
+                </div>
+
+                <div className="flex flex-wrap items-center gap-3">
+                    <a
+                        href={RESUME_PDF}
+                        download
+                        className="flex w-fit items-center gap-2 rounded-md bg-foreground px-4 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-85"
+                    >
+                        <IconDownload size={16} stroke={1.5} />
+                        Baixar currículo (PDF)
+                    </a>
+                    <a
+                        href={RESUME_PDF}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex w-fit items-center gap-2 rounded-md border border-border px-4 py-2.5 text-sm font-medium transition-colors hover:bg-subtle"
+                    >
+                        Ver no navegador
+                        <IconArrowUpRight
+                            size={16}
+                            stroke={1.5}
+                            className="text-muted transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                        />
+                    </a>
                 </div>
             </div>
-        </section>
+        </Section>
     );
 }
 

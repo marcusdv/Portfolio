@@ -1,16 +1,14 @@
 const Footer = () => {
-  return (
-    <footer className="text-slate-500 text-center py-12 px-6 border-t border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
-      <div className="max-w-4xl mx-auto">
-        <p className="text-sm mb-2 font-medium">
-          Desenvolvido por <span className="text-slate-700">Marcus Costa</span>
-        </p>
-        <p className="text-xs text-slate-400">
-          &copy; {new Date().getFullYear()} • Todos os direitos reservados
-        </p>
-      </div>
-    </footer>
-  );
+    return (
+        <footer className="border-t border-border">
+            <div className="mx-auto flex max-w-content flex-col gap-2 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-sm text-muted">
+                    Desenvolvido por <span className="text-foreground">Marcus Costa</span>
+                </p>
+                <p className="font-mono text-xs text-muted">&copy; {new Date().getFullYear()}</p>
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;

@@ -1,37 +1,38 @@
-const skills = [
-    "Next.js",
-    "React",
-    "Typescript",
-    "Javascript",
-    "Python",
-    "PHP",
-    "HTML & CSS",
-    "Tailwind CSS",
-    "Shadcn/UI",
-    "PostgreSQL",
-    "Supabase",
-    "REST API",
-    "Git & GitHub",
-    "Vercel",
+import Section from "../components/Section";
+
+const skillGroups = [
+    {
+        title: "Frontend",
+        skills: ["Next.js", "React", "TypeScript", "JavaScript", "HTML & CSS", "Tailwind CSS", "Shadcn/UI"],
+    },
+    {
+        title: "Backend & Dados",
+        skills: ["Python", "PHP", "PostgreSQL", "Supabase", "REST API"],
+    },
+    {
+        title: "Ferramentas",
+        skills: ["Git & GitHub", "Vercel"],
+    },
 ];
 
 function Skills() {
     return (
-        <section className="bg-white shadow-md p-2 md:p-5 mt-5 rounded-xl border border-slate-100">
-            <h2 className=" text-lg md:text-2xl font-bold mb-3 text-slate-700 text-center md:text-left">Skills</h2>
-            <ul className="flex flex-wrap gap-2">
-                {skills.map((skill, index) => {
-                    return (
-                        <li
-                            key={index}
-                            className="text-slate-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-full px-3 py-1 text-sm transition-colors duration-200"
-                        >
-                            {skill}
-                        </li>
-                    );
-                })}
-            </ul>
-        </section>
+        <Section id="skills" index="02 / Stack" title="Tecnologias">
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
+                {skillGroups.map((group) => (
+                    <div key={group.title} className="flex flex-col gap-4">
+                        <h3 className="label">{group.title}</h3>
+                        <ul className="flex flex-col gap-2.5">
+                            {group.skills.map((skill) => (
+                                <li key={skill} className="text-sm">
+                                    {skill}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </div>
+        </Section>
     );
 }
 
