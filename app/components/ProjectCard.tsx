@@ -3,7 +3,7 @@ import { IconArrowUpRight } from "@tabler/icons-react";
 
 type ProjectsCardsProps = {
     name: string;
-    description: string;
+    description?: string;
     url: string;
     imgUrl: string;
     stack?: string[];
@@ -36,7 +36,7 @@ function ProjectsCards({ name, description, url, imgUrl, stack = [] }: ProjectsC
                     />
                 </h3>
 
-                <p className="max-w-2xl text-sm leading-relaxed text-muted">{description}</p>
+                {description && <p className="max-w-2xl text-sm leading-relaxed text-muted">{description}</p>}
 
                 {stack.length > 0 && (
                     <ul className="mt-1 flex flex-wrap gap-2">

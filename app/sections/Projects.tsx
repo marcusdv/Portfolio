@@ -4,16 +4,15 @@ import Section from "../components/Section";
 const projects = [
     {
         name: "Meu blog!",
-        description: "Em desenvolvimento no momento. Mas já da pra dar uma olhadinha.",
-
+        description: "Meu espaço para escrever sobre desenvolvimento web, filmes, séries e livros.",
         url: "https://blog-blop.vercel.app/",
-        imgUrl: "/images/projects/defaultimage.jpg",
+        imgUrl: "/images/projects/blog.png",
         stack: ["Next.js", "TypeScript", "Tailwind CSS"],
     },
     {
         name: "Wiki Game",
         description:
-            "Jogo baseado no desafio da Wikipedia: comece em um artigo aleatório e navegue apenas por links internos até chegar ao artigo destino no menor número de cliques possível. Uma API REST personalizada fornece os dados dos artigos e links da Wikipedia.",
+            "Comece em um artigo aleatório da Wikipedia e chegue ao destino usando só links internos, no menor número de cliques.",
 
         url: "https://wikigame-five.vercel.app/",
         imgUrl: "/images/projects/wikirun.jpeg",
@@ -22,23 +21,14 @@ const projects = [
     {
         name: "CEEFGuru",
         description:
-            "Aplicação web especializada em previsão do tempo para o dia do vôlei dos estudantes de Farmácia da UFBA. Para ajudar os alunos a se organizarem para seus jogos de sexta-feira. As APIs de previsão utilizadas foram OpenWeather, MeteoBlue e AccuWeather.",
+            "Previsão do tempo para o dia do vôlei dos estudantes de Farmácia da UFBA, cruzando OpenWeather, MeteoBlue e AccuWeather.",
         url: "https://previsao-do-ceef.vercel.app/",
         imgUrl: "/images/projects/magistral.jpeg",
         stack: ["Next.js", "TypeScript", "Tailwind CSS", "REST API"],
     },
     {
-        name: "É Pra Hoje!",
-        description:
-            "Aplicação de lista de tarefas diárias com limite de horário de término e criação de tarefas. Também possui prioridade de tarefa e days streaks.",
-        url: "https://to-do-day-pi.vercel.app/",
-        imgUrl: "/images/projects/eprahojelogo.png",
-        stack: ["React", "JavaScript", "CSS"],
-    },
-    {
         name: "Salpatos",
-        description:
-            "Loja de sapatos fictícia, simulando checkout, produtos, login e catálogo, com autenticação e banco de dados no Supabase.",
+        description: "Loja de sapatos fictícia com catálogo, login e checkout simulado.",
         url: "https://loja-de-roupa-delta.vercel.app/",
         imgUrl: "/images/projects/salpato.png",
         stack: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS"],
