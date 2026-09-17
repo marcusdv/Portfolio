@@ -20,7 +20,7 @@ const experience = [
         role: "Automação de extração de dados de PDFs",
         org: "Freelance para profissionais da área da saúde",
         meta: "Salvador, BA",
-        period: "2023 a 2025",
+        period: "2020 a 2025",
         bullets: [
             "Aplicação em Python para extração de dados estruturados a partir de PDFs.",
             "Automação da geração de planilhas Excel a partir dos dados extraídos.",
