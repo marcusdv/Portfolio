@@ -26,13 +26,6 @@ const projects = [
         imgUrl: "/images/projects/magistral.jpeg",
         stack: ["Next.js", "TypeScript", "Tailwind CSS", "REST API"],
     },
-    {
-        name: "Salpatos",
-        description: "Loja de sapatos fictícia com catálogo, login e checkout simulado.",
-        url: "https://loja-de-roupa-delta.vercel.app/",
-        imgUrl: "/images/projects/salpato.png",
-        stack: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS"],
-    },
 ];
 
 function Projects() {

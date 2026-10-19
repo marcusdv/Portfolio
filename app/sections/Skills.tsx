@@ -3,15 +3,15 @@ import Section from "../components/Section";
 const skillGroups = [
     {
         title: "Frontend",
-        skills: ["Next.js", "React", "TypeScript", "JavaScript", "HTML & CSS", "Tailwind CSS", "Shadcn/UI"],
+        skills: ["React", "Next.js", "TypeScript", "JavaScript", "HTML & CSS", "Tailwind CSS", "Eleventy", "Ness.css"],
     },
     {
         title: "Backend & Dados",
-        skills: ["Python", "PHP", "PostgreSQL", "Supabase", "REST API"],
+        skills: ["Python", "Node.js", "REST API", "Zod", "PostgreSQL", "MySQL", "Supabase (Auth, RLS)", "JWT"],
     },
     {
         title: "Ferramentas",
-        skills: ["Git & GitHub", "Vercel"],
+        skills: ["Git & GitHub", "CI/CD", "Vercel", "Playwright", "Metodologias ágeis"],
     },
 ];
 

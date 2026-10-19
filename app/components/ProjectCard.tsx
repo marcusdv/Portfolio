@@ -19,7 +19,7 @@ function ProjectsCards({ name, description, url, imgUrl, stack = [] }: ProjectsC
             aria-label={`Ver projeto ${name}`}
         >
             <Image
-                className="aspect-[16/10] w-full rounded-md border border-border object-cover grayscale transition-all duration-300 group-hover:grayscale-0"
+                className="aspect-[16/10] w-full rounded-md border border-border object-cover"
                 src={imgUrl}
                 alt={`Imagem do projeto ${name}`}
                 width={480}
