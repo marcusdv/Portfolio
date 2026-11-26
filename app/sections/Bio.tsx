@@ -6,16 +6,19 @@ const links = [
         href: "mailto:marcus.vinicius.bittencourt.c@gmail.com",
         label: "Email",
         icon: IconAt,
+        color: "text-[#EA4335]", // vermelho do Gmail
     },
     {
         href: "https://www.linkedin.com/in/marcus-bittencourt/",
         label: "LinkedIn",
         icon: IconBrandLinkedin,
+        color: "text-[#0A66C2]", // azul do LinkedIn
     },
     {
         href: "https://github.com/marcusdv",
         label: "GitHub",
         icon: IconBrandGithub,
+        color: "text-[#8250DF]", // roxo do GitHub
     },
 ];
 
@@ -33,10 +36,7 @@ function Bio() {
                     />
                     <div className="flex flex-col gap-1">
                         <span className="label">Desenvolvedor Fullstack</span>
-                        <span className="flex items-center gap-2 text-sm text-muted">
-                            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                            Salvador, BA · disponível para projetos
-                        </span>
+                        <span className="text-sm text-muted">Salvador, BA · disponível para projetos</span>
                     </div>
                 </div>
 
@@ -52,13 +52,13 @@ function Bio() {
                 </p>
 
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-                    {links.map(({ href, label, icon: Icon }) => (
+                    {links.map(({ href, label, icon: Icon, color }) => (
                         <a
                             key={label}
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group flex items-center gap-2 text-sm text-muted transition-colors hover:text-foreground"
+                            className={`group flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-75 ${color}`}
                         >
                             <Icon size={18} stroke={1.5} />
                             {label}

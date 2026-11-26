@@ -12,7 +12,7 @@ type ProjectsCardsProps = {
 function ProjectsCards({ name, description, url, imgUrl, stack = [] }: ProjectsCardsProps) {
     return (
         <a
-            className="group grid grid-cols-1 gap-5 border-b border-border py-8 transition-opacity first:pt-0 last:border-b-0 md:grid-cols-[10rem_1fr] md:gap-8"
+            className="group grid h-full grid-cols-1 content-start gap-5 md:grid-cols-[10rem_1fr] md:gap-8"
             href={url}
             target="_blank"
             rel="noopener noreferrer"

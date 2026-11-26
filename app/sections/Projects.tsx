@@ -44,9 +44,12 @@ function Projects() {
             title="Projetos"
             description="Uma seleção de coisas que construí. Todos estão no ar e o código está no GitHub."
         >
-            <ul>
+            {/* No desktop, todas as linhas têm a altura da maior (auto-rows-fr): as imagens ficam igualmente
+                espaçadas mesmo quando a lista de tecnologias de um projeto quebra em mais linhas. */}
+            {/* Todos os itens têm o MESMO espaço em cima e embaixo (py-8); o -my-8 da lista compensa nas pontas. */}
+            <ul className="-my-8 flex flex-col md:grid md:auto-rows-fr">
                 {projects.map((project, i) => (
-                    <li key={i}>
+                    <li key={i} className="border-b border-border py-8 last:border-b-0">
                         <ProjectCard
                             name={project.name}
                             description={project.description}
