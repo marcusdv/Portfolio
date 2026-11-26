@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     title: "Marcus Costa | Desenvolvedor Fullstack",
     description:
-        "Portfólio de Marcus Costa, desenvolvedor fullstack. Projetos com Next.js, TypeScript, React e Tailwind CSS.",
+        "Portfólio de Marcus Costa, desenvolvedor fullstack. Projetos com Next.js, TypeScript, React, PostgreSQL e IA.",
 };
 
 export default function RootLayout({

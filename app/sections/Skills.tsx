@@ -11,7 +11,14 @@ const skillGroups = [
     },
     {
         title: "Ferramentas",
-        skills: ["Git & GitHub", "CI/CD", "Vercel", "Playwright", "Metodologias ágeis"],
+        skills: [
+            "Git & GitHub",
+            "CI/CD",
+            "Vercel",
+            "Playwright",
+            "Testes unitários, de integração e E2E",
+            "Metodologias ágeis",
+        ],
     },
 ];
 

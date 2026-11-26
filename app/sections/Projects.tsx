@@ -3,6 +3,14 @@ import Section from "../components/Section";
 
 const projects = [
     {
+        name: "Tabuleirinho",
+        description:
+            "Mesa virtual de RPG no navegador, focada em D&D 5.5: mapas com grid, tokens, fichas, névoa de guerra, iniciativa, dados e chat. O link abre uma demo em modo teste; para jogar online, o mestre hospeda o próprio servidor.",
+        url: "https://tabuleirinho-wine.vercel.app/",
+        imgUrl: "/images/projects/tabuleirinho.png",
+        stack: ["TypeScript", "PixiJS", "Vite", "Node.js", "WebSocket", "Playwright"],
+    },
+    {
         name: "Meu blog!",
         description: "Meu espaço para escrever sobre desenvolvimento web, filmes, séries e livros.",
         url: "https://blog-blop.vercel.app/",
@@ -16,7 +24,7 @@ const projects = [
 
         url: "https://wikigame-five.vercel.app/",
         imgUrl: "/images/projects/wikirun.jpeg",
-        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "REST API", "Zod", "JWT"],
+        stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL", "REST API", "Zod", "JWT", "Playwright"],
     },
     {
         name: "CEEFGuru",

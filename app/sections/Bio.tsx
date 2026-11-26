@@ -45,9 +45,10 @@ function Bio() {
                 </h1>
 
                 <p className="max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
-                    Construo aplicações web do início ao fim com React, Next.js e TypeScript, com interesse em IA
-                    generativa e automação com LLMs no fluxo de desenvolvimento. Automatizo processos com Python
-                    desde 2018 e atualmente atuo como desenvolvedor frontend no Instituto Themis Furigo.
+                    Construo aplicações web do início ao fim com React, Next.js e TypeScript, integrando APIs REST e
+                    modelando dados em PostgreSQL/Supabase. Uso IA generativa e LLMs para acelerar o desenvolvimento,
+                    automatizo processos com Python desde 2020 e atualmente atuo como desenvolvedor frontend no
+                    Instituto Themis Furigo. Inglês fluente.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-3">

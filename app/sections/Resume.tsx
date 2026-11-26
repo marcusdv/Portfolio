@@ -11,17 +11,16 @@ const experience = [
         period: "2024 até hoje",
         bullets: [
             "Desenvolvimento de páginas institucionais com TypeScript, JavaScript, HTML e CSS.",
-            "Uso de IA generativa (Claude) como apoio à escrita e revisão do código.",
-            "Reestruturação da arquitetura de conteúdo do site.",
+            "Desenvolvimento acelerado com IA generativa (Claude) na escrita, revisão e documentação do código.",
             "Integração de APIs REST para exibição dinâmica de informações.",
-            "Correção de bugs, melhorias de usabilidade e versionamento com Git/GitHub.",
+            "Correção de bugs, melhorias de usabilidade e implantação do controle de versão com Git/GitHub.",
         ],
     },
     {
         role: "Desenvolvedor Python",
         org: "Autônomo · Profissionais de Saúde",
         meta: "Salvador, BA",
-        period: "2018 a 2024",
+        period: "2020 a 2024",
         bullets: [
             "Aplicação para extração de dados estruturados de PDFs com Pypdf, gerando planilhas Excel automaticamente com Openpyxl.",
             "Redução do tempo diário de extração manual, ampliando o tempo de análise dos profissionais.",
@@ -46,12 +45,10 @@ const courses = [
     "The Modern JavaScript / Node Bootcamp | Udemy",
     "SQL and PostgreSQL: The Complete Developer's Guide | Udemy",
     "The Ultimate MySQL Bootcamp | Udemy",
-    "RESTful API Testing with Postman | Udemy",
     "Quality Assurance: plano de testes e gestão de bugs",
-    "Início em Teste e QA | Iterasys",
     "Learn HTTP Clients in TypeScript | Boot.dev",
     "Learn Git | Boot.dev",
-    "EF SET Certificate | Inglês nível profissional",
+    "Teste e QA | Iterasys",
 ];
 
 type Entry = { role: string; org: string; meta: string; period: string; bullets: string[] };
